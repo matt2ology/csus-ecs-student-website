@@ -69,3 +69,15 @@ makes the columns stack on top of each other instead of next to each other
      'footer footer footer footer footer footer';
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  #container {
+    grid-auto-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+     'header header'
+     'nav nav'
+     'main main' 
+     'footer aside';
+  }
+}
